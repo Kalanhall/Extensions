@@ -17,6 +17,19 @@ class ViewController: UIViewController {
         
         UIImage.image(named: "", in: Bundle(for: type(of: self)))?.original
         UIImage.image(color: UIColor.black)
+        
+//        self.view.backgroundColor = UIColor.color(hexNumber: 0xFF7D25)
+        self.view.backgroundColor = UIColor.color(hexString: "0xFF7D25")
+        
+        
+        let btn = UIButton(type: .custom)
+        btn.layer.borderWidth = 1
+        btn.setTitle("标题", for: .normal)
+        btn.setImage(UIImage(named: "error"), for: .normal)
+        btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
+        self.view .addSubview(btn)
+        
+        btn.layout(with: .normal, margin: 0)
     }
 
     override func didReceiveMemoryWarning() {
