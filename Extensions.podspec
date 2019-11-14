@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Extensions'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of Extensions.'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Kalanhall@163.com/Extensions'
+  s.homepage         = 'https://github.com/Kalanhall/Extensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kalanhall@163.com' => 'wujm002@galanz.com' }
