@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
         self.view .addSubview(btn)
         
-        btn.layout(with: .normal, margin: 0)
+        btn.layout(with: .normal, margin: 10.auto())
     }
 
     override func didReceiveMemoryWarning() {
