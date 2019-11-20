@@ -12,23 +12,23 @@
 
 #ifdef DEBUG
 + (void)load {
-    Method m1 = class_getInstanceMethod(self, @selector(viewWillAppear:));
-    Method m2 = class_getInstanceMethod(self, @selector(ex_viewWillAppear:));
+    Method m1 = class_getInstanceMethod(self, @selector(viewDidLoad));
+    Method m2 = class_getInstanceMethod(self, @selector(ex_viewDidLoad));
     method_exchangeImplementations(m1, m2);
     
-    Method m3 = class_getInstanceMethod(self, @selector(viewDidDisappear:));
-    Method m4 = class_getInstanceMethod(self, @selector(ex_viewDidDisappear:));
+    Method m3 = class_getInstanceMethod(self, NSSelectorFromString(@"dealloc"));
+    Method m4 = class_getInstanceMethod(self, @selector(ex_dealloc));
     method_exchangeImplementations(m3, m4);
 }
 
-- (void)ex_viewWillAppear:(BOOL)animated {
-    [self ex_viewWillAppear:animated];
-    NSLog(@"%@ viewWillAppear", self);
+- (void)ex_viewDidLoad {
+    [self ex_viewDidLoad];
+    NSLog(@"%@ viewDidLoad", self);
 }
 
-- (void)ex_viewDidDisappear:(BOOL)animated {
-    [self ex_viewDidDisappear:animated];
-    NSLog(@"%@ viewDidDisappear", self);
+- (void)ex_dealloc {
+    [self ex_dealloc];
+    NSLog(@"%@ dealloc", self);
 }
 
 #endif
