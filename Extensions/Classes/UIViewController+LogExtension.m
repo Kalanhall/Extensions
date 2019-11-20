@@ -22,13 +22,13 @@
 }
 
 - (void)ex_viewDidLoad {
-    [self ex_viewDidLoad];
     NSLog(@"%@ viewDidLoad", self);
+    [self ex_viewDidLoad];
 }
 
 - (void)ex_dealloc {
-    [self ex_dealloc];
     NSLog(@"%@ dealloc", self);
+    [self ex_dealloc];
 }
 
 #endif
