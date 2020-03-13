@@ -31,7 +31,7 @@ extension NSObject {
     }
     
     /// 选项栏高度
-    public func EXBottomBarHeight() -> CGFloat {
+    public func EXBottomSafeAreaInset() -> CGFloat {
         if #available(iOS 11.0, *) {
             return UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
         } else {
@@ -40,8 +40,8 @@ extension NSObject {
     }
 
     /// iPhoneX底部安全高度
-    public func EXBottomSafeAreaInset() -> CGFloat {
-        return EXBottomBarHeight() + 49.0
+    public func EXBottomBarHeight() -> CGFloat {
+        return EXBottomSafeAreaInset() + 49.0
     }
 
 }
