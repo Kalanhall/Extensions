@@ -29,9 +29,9 @@
         <!--Navigation Controller-->
         <scene sceneID="AK3-Zb-lvA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oa1-1t-9VN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oa1-1t-9VN" customClass="KLNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="blh-AB-rkm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="blh-AB-rkm" customClass="KLNavigationBar">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

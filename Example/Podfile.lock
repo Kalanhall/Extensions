@@ -1,16 +1,23 @@
 PODS:
-  - Extensions (1.0.3)
+  - Extensions (1.0.5)
+  - KLNavigationController (1.0.0)
 
 DEPENDENCIES:
   - Extensions (from `../`)
+  - KLNavigationController
+
+SPEC REPOS:
+  trunk:
+    - KLNavigationController
 
 EXTERNAL SOURCES:
   Extensions:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Extensions: 018049ff6cd134bf76dd0985e9c99135f7522be3
+  Extensions: e3ecacf299ebad0b3bfe24c4f44310a6ff588b13
+  KLNavigationController: ed8a50a14e54a499d3a483c681bb7f394002a6bf
 
-PODFILE CHECKSUM: aa8e3c8405ece8a7e2aeded500ef44a5b9cc00ee
+PODFILE CHECKSUM: c66c031f6d9c7cb29fe765cc7076235143c931da
 
 COCOAPODS: 1.8.3

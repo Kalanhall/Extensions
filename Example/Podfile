@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'Extensions_Example' do
   pod 'Extensions', :path => '../'
+  pod 'KLNavigationController'
 
   target 'Extensions_Tests' do
     inherit! :search_paths

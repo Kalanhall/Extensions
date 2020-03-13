@@ -15,12 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UIImage.image(named: "", in: Bundle(for: type(of: self)))?.original
-        UIImage.image(color: UIColor.black)
+//        UIImage.image(named: "error", in: Bundle(for: type(of: self)))?.original
+//        UIImage.image(color: UIColor.black)
         
-//        self.view.backgroundColor = UIColor.color(hexNumber: 0xFF7D25)
-        self.view.backgroundColor = UIColor.color(hexString: "0xFF7D25")
-        
+        self.view.backgroundColor = UIColor.color(hexNumber: 0xFF7D25)
+//        self.view.backgroundColor = UIColor.color(hexString: "0xFFFFFF")
         
         let btn = UIButton(type: .custom)
         btn.layer.borderWidth = 1
@@ -29,7 +28,11 @@ class ViewController: UIViewController {
         btn.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
         self.view .addSubview(btn)
         
-        btn.layout(with: .normal, margin: 10.auto())
+        btn.layout(with: .top, margin: 5.auto())
+        
+//        let path = URL(fileURLWithPath: Bundle.main.path(forResource: "error@2x.png", ofType: nil) ?? "")
+//        let image = UIImage.resizedImage(at: path, for: btn.frame.size)
+//        btn.setBackgroundImage(image, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +41,10 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.navigationController?.pushViewController(UIViewController(), animated: true)
+        let vc = UIViewController()
+        vc.view.backgroundColor = .white
+        vc.kl_barAlpha = 0
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
