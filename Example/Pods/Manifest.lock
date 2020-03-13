@@ -1,5 +1,5 @@
 PODS:
-  - Extensions (1.0.5)
+  - Extensions (1.0.6.1)
   - KLNavigationController (1.0.0)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Extensions: e3ecacf299ebad0b3bfe24c4f44310a6ff588b13
+  Extensions: 7be7ce153178cd8782df011379dc9c6ba9927a6d
   KLNavigationController: ed8a50a14e54a499d3a483c681bb7f394002a6bf
 
 PODFILE CHECKSUM: c66c031f6d9c7cb29fe765cc7076235143c931da

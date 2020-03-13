@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Extensions'
-  s.version          = '1.0.6.1'
+  s.version          = '1.0.7'
   s.summary          = 'A short description of Extensions.'
 
 # This description is used to generate tags and improve search results.
