@@ -33,6 +33,13 @@ class ViewController: UIViewController {
 //        let path = URL(fileURLWithPath: Bundle.main.path(forResource: "error@2x.png", ofType: nil) ?? "")
 //        let image = UIImage.resizedImage(at: path, for: btn.frame.size)
 //        btn.setBackgroundImage(image, for: .normal)
+        
+        let image = UIImage(named: "bg")
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 200, width: 100, height: 100))
+        imageView.layer.borderWidth = 1
+        view.addSubview(imageView)
+        imageView.image = image?.setImage(image!, in: CGRect(x: 0, y: image!.size.height / 3.0, width: image!.size.width, height: image!.size.height / 3.0), with: nil)
+        imageView.contentMode = .scaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
