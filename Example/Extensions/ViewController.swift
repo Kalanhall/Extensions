@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 200, width: 100, height: 100))
         imageView.layer.borderWidth = 1
         view.addSubview(imageView)
-        imageView.image = image?.setImage(image!, in: CGRect(x: 0, y: image!.size.height / 3.0, width: image!.size.width, height: image!.size.height / 3.0), with: nil)
+        imageView.image = UIImage.imageCropping(image, in: CGRect(x: 0, y: (image?.size.height ?? 0) / 3.0, width: image?.size.width ?? 0, height: (image?.size.height ?? 0) / 3.0), with: nil)
         imageView.contentMode = .scaleAspectFit
     }
 

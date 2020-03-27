@@ -73,9 +73,16 @@ public extension UIImage {
     }
     
     /// 获取图片指定位置图片
-    func setImage(_ image: UIImage, in partRect:CGRect , with placeholder:UIImage?) -> UIImage? {
-        guard let imageRef = image.cgImage else { return placeholder }
-        guard let imagePartRef = imageRef.cropping(to: partRect) else { return placeholder }
+    class func imageCropping(_ image: UIImage?, in partRect:CGRect , with placeholder:UIImage?) -> UIImage? {
+        guard let aImage = image else {
+            return placeholder
+        }
+        guard let imageRef = aImage.cgImage else {
+            return placeholder
+        }
+        guard let imagePartRef = imageRef.cropping(to: partRect) else {
+            return placeholder
+        }
         let partImage = UIImage.init(cgImage: imagePartRef)
         return partImage
     }
